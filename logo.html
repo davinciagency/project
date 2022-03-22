@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: black;
+}
+
+.sidenav-logo {
+  padding-top:25px;
+  padding-bottom:20px;
+  height: 142px;
+  width: 299px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  border-right: 1px solid #9e9e9e;
+}
+
+.sidenav-logo a {
+  padding: 30px 0px 7px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav-top {
+  margin-top: 163px;
+  margin-bottom: 20px;
+  height: 400px;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.sidenav-bottom {
+  margin-top: 432px;
+  height: 550px;
+  width: 299px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  border-right: 1px solid #9e9e9e;
+}
+
+.non-active:hover {
+  color: #666666;
+}
+
+.non-active {
+  padding: 10px 0px 10px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #9e9e9e;
+  display: block;
+  border-right: 1px solid #9e9e9e;
+}
+
+.active {
+  padding: 10px 0px 10px 100px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f0f0;
+  display: block;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #9e9e9e;
+  border-top: 1px solid #9e9e9e;
+}
+
+.active span {
+  animation: 0.3s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -45%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.main {
+  padding-top:25px;
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 25px;
+  color: #f0f0f0;
+  padding-left: 50px;
+}
+
+.images {
+  display: inline-block;
+}
+
+.image-txt-container {
+  display: flex;
+  margin: 0;
+  width: 200px;
+  float: right;
+  flex-direction: row;
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.image-txt-container-2 {
+  display: flex;
+  padding-right: 10px;
+  margin: 0;
+  width: 140px;
+  float: right;
+  flex-direction: row;
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mode {
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.profile {
+  margin-left: 15px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="sidenav-logo">
+  <a href="index.html"><img src="davinci-logo.png" alt="Davinci text" style="width:250px;height:140;"></a>
+</div>
+<div class="sidenav-top">
+  <a href="index.html" class="non-active">Intro</a>
+  <a href="logo.html"class="active"><span>Logo</span></a>
+  <a href="font.html"class="non-active" >Font</a>
+  <a href="colors.html" class="non-active" >Colors</a>
+  <a href="media.html"class="non-active">Media Assets</a>
+</div>
+<div class="sidenav-bottom">
+</div>
+
+<div class="main">
+  <a href="#" class="image-txt-container">
+    Night mode 
+    <img src="mode.png" class="mode" width="20px" height="20px">
+  </a>
+  <h2>Logo</h2>
+  <p>This section features the logos from Davinci and the way in which you need to use them.</p>
+  <img src="logos.jpg" alt="Variations of the logos" width="1100" height="800" style="padding-top:15px;">
+  <p>There are three logo variants from Davinci:</p>
+  <div class="images">
+  <img src="logo1.jpg" alt="Logo with text" width="400px" height="400px">
+  <img src="logo2.jpg" style="padding-bottom:100px;" alt="Logo with text" width="400px" height="300px">
+  <img src="logo3.jpg" style="padding-bottom:100px;" alt="Logo with text" width="650px" height="200px">
+</div>
+  <img src="position1.jpg" width="1000px" height="600px">
+  <img src="position2.jpg" width="600px" height="600px">
+</div>
+   
+</body>
+</html> 
